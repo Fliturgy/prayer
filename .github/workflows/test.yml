@@ -1,0 +1,29 @@
+name: Flutter Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+      
+      - name: Install and set Flutter version
+        uses: subosito/flutter-action@v2
+        with:
+          flutter-version: '3.10.2'
+      
+      - name: Restore packages
+        run: flutter pub get
+      
+      - name: Analyze
+        run: flutter analyze
+      
+      - name: Run tests
+        run: flutter test --coverage
