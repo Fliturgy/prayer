@@ -7,6 +7,8 @@ import '../widgets/app_bar.dart';
 import '../widgets/prayer_list_item.dart';
 
 class PrayerListScreen extends StatelessWidget {
+  /// The PrayerListScreen class is a stateless widget that represents the list
+  /// screen for a prayer.
   static const routeName = '/';
 
   final String title;
@@ -19,6 +21,8 @@ class PrayerListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method is a lifecycle method that is called when the widget
+    /// is rebuilt.
     final liturgies = Provider.of<Prayers>(context).prayers;
 
     return Scaffold(

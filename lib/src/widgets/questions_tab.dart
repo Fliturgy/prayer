@@ -4,6 +4,7 @@ import '../configuration.dart';
 import '../models/prayer.dart';
 
 class QuestionsTab extends StatelessWidget {
+  /// The QuestionsTab class is a widget that displays a list of questions.
   final Prayer prayer;
   final PrayerConfiguration configuration;
 
@@ -14,6 +15,7 @@ class QuestionsTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method returns a widget that displays a list of questions.
     return (prayer.questions ?? []).isNotEmpty
         ? Column(
             children: [

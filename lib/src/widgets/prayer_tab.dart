@@ -4,6 +4,7 @@ import '../configuration.dart';
 import '../models/prayer.dart';
 
 class PrayerTabWidget extends StatelessWidget {
+  /// The PrayerTabWidget class is a widget that displays a prayer.
   final Prayer prayer;
   final PrayerConfiguration configuration;
 
@@ -14,6 +15,7 @@ class PrayerTabWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method returns a widget that displays a prayer.
     return Column(
       children: [
         // Subtitle

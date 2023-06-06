@@ -10,6 +10,7 @@ import 'screens/prayer_details_screen.dart';
 import 'screens/prayer_list_screen.dart';
 
 class PrayerApp extends StatelessWidget {
+  /// The PrayerApp class is a widget that represents the entire application.
   final List<Prayer> prayers;
   final String title;
   final ThemeData themeData;
@@ -24,6 +25,8 @@ class PrayerApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method returns a widget that represents the entire
+    /// application.
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(

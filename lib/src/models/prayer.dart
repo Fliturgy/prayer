@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Prayer with ChangeNotifier {
+  /// The Prayer class is a model class that represents a prayer.
   final int id;
   final String title;
   final String? subTitle;

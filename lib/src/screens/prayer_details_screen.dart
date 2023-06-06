@@ -9,6 +9,8 @@ import '../widgets/prayer_item.dart';
 import '../widgets/tab_bar.dart';
 
 class PrayerDetailsScreen extends StatefulWidget {
+  /// The PrayerDetailsScreen class is a stateful widget that represents the
+  /// details screen for a prayer.
   static const routeName = '/prayer-details';
 
   final PrayerConfiguration configuration;
@@ -23,16 +25,21 @@ class PrayerDetailsScreen extends StatefulWidget {
 }
 
 class _PrayerDetailsScreenState extends State<PrayerDetailsScreen> {
+  /// The _PrayerDetailsScreenState class is a state class for the
+  /// PrayerDetailsScreen class.
   late PrayerTabData _selectedTab;
 
   @override
   void initState() {
+    /// The initState method is a lifecycle method that is called when the
+    /// widget is first inserted into the tree.
     super.initState();
     _selectedTab = widget.configuration.tabs.firstWhere(
         (element) => element.type == widget.configuration.defaultTabType);
   }
 
   void _selectTab(int index) {
+    /// The _selectTab method is a method that is called when a tab is selected.
     setState(() {
       _selectedTab = widget.configuration.tabs[index];
     });
@@ -40,6 +47,8 @@ class _PrayerDetailsScreenState extends State<PrayerDetailsScreen> {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method is a lifecycle method that is called when the widget
+    /// is rebuilt.
     final prayers = Provider.of<Prayers>(context).prayers;
     final prayerId = ModalRoute.of(context)?.settings.arguments as int;
     final prayer = prayers.firstWhere((element) => element.id == prayerId);

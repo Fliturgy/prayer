@@ -5,6 +5,7 @@ import '../models/prayer.dart';
 import '../screens/prayer_details_screen.dart';
 
 class PrayerListItem extends StatelessWidget {
+  /// The PrayerListItem class is a widget that displays a prayer in a list.
   final Prayer prayer;
   final PrayerConfiguration configuration;
 
@@ -15,6 +16,7 @@ class PrayerListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method returns a widget that displays a prayer in a list.
     return ListTile(
       leading: configuration.showImageOnListScreen && prayer.image != null
           ? Image(

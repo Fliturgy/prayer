@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import './models/tab.dart';
 
 class PrayerConfiguration {
+  /// The PrayerConfiguration class is a model class that represents the
+  /// configuration of the app.
   final bool showImageOnListScreen;
   final bool showImageOnDetailsScreen;
 

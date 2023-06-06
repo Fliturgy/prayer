@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class PrayerAppBar extends StatelessWidget implements PreferredSizeWidget {
+  /// The PrayerAppBar class is a widget that represents the app bar.
   final String title;
   final bool hasBackButton;
 
@@ -16,6 +17,8 @@ class PrayerAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method is a lifecycle method that is called when the widget
+    /// is rebuilt.
     return AppBar(
       centerTitle: true,
       leading: hasBackButton

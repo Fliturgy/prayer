@@ -4,6 +4,8 @@ import '../configuration.dart';
 import '../models/prayer.dart';
 
 class ScriptureTab extends StatelessWidget {
+  /// The ScriptureTab class is a widget that displays a scripture reference and
+  /// text.
   final Prayer prayer;
   final PrayerConfiguration configuration;
 
@@ -14,6 +16,8 @@ class ScriptureTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    /// The build method returns a widget that displays a scripture reference
+    /// and text.
     return prayer.scriptureReference != null && prayer.scriptureText != null
         ? Column(
             children: [
