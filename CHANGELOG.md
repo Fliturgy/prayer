@@ -7,9 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Changed
+## [0.0.2]
 
-- Removed some unnecessary files from version control
+### Added
+
+- more dart docs for generated API reference documentation
+- GitHub actions to test and publish
+
+### Removed
+
+- unnecessary files from the example project
 
 ## [0.0.1]
 
@@ -37,5 +44,6 @@ Initial Version
     - configuring which tabs are available
     - setting the default tab
 
-[unreleased]: https://github.com/fliturgy/prayer/compare/v0.0.1...HEAD
+[unreleased]: https://github.com/fliturgy/prayer/compare/v0.0.2...HEAD
+[0.0.2]: https://github.com/fliturgy/prayer/compare/v0.0.1...v0.0.2
 [0.0.1]: https://github.com/fliturgy/prayer/releases/tag/v0.0.1
