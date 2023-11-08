@@ -10,10 +10,9 @@ class PrayerAppBar extends StatelessWidget implements PreferredSizeWidget {
 
   PrayerAppBar(
     this.title, {
-    Key? key,
+    super.key,
     this.hasBackButton = false,
-  })  : preferredSize = Size.fromHeight(50.0),
-        super(key: key);
+  }) : preferredSize = Size.fromHeight(50.0);
 
   @override
   Widget build(BuildContext context) {
